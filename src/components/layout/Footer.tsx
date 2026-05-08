@@ -11,13 +11,13 @@ export function Footer() {
             MKAL Topluluk
           </Link>
           <p className="text-sm text-muted-foreground text-center md:text-left max-w-sm">
-            Öğrenciler arası iletişim, anılar ve güncel okul haberleri platformu.
+            MKAL'in babalarinin mekani
           </p>
         </div>
 
         <div className="flex items-center gap-4 mt-4 md:mt-0">
           <a
-            href="#"
+            href="https://instagram.com/mkaltopluluk"
             className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             <Globe className="w-5 h-5" />

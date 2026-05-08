@@ -55,7 +55,7 @@ export function Navbar() {
             className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 text-sm"
           >
             <ShieldAlert className="w-4 h-4" />
-            Admin
+            Babanin Yeri
           </Link>
         </div>
 
