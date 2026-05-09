@@ -98,7 +98,7 @@ export function Navbar() {
             className="flex items-center gap-3 p-2 text-muted-foreground hover:bg-muted hover:text-foreground rounded-md transition-colors"
           >
             <ShieldAlert className="w-5 h-5" />
-            Admin Paneli
+            Babanin Yeri
           </Link>
         </div>
       )}

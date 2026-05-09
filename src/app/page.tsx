@@ -13,13 +13,13 @@ export default function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            MKAL Topluluk Yayında!
+            MKAL Topluluk Aktif!
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 max-w-3xl">
-            Anılarını Paylaş, Okuldan <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Haberin Olsun</span>
+            MKAL ÖĞRENCİ TOPLULUĞU <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">I LOVE MKAL</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10">
-            MKAL'e dair en güncel haberler, fotoğraf arşivleri ve isimsiz itiraflar tek bir platformda.
+            ÜST DÜZEY MKAL ÖĞRENCİ TOPLULUĞU
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -50,7 +50,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold mb-2">Güncel Haberler</h3>
             <p className="text-muted-foreground mb-4 flex-1">
-              Okuldaki son etkinlikler, duyurular ve öğrenci başarıları hakkında anında bilgi sahibi ol.
+              Mkal etkinlik duyuru dostlarımızın başarıları kısaca mkal gurur kaynaklarımızın paylaşımları
             </p>
             <Link href="/haberler" className="text-primary font-medium flex items-center gap-1 hover:gap-2 transition-all mt-auto">
               Haberleri Oku <ArrowRight className="w-4 h-4" />
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold mb-2">Anonim İtiraflar</h3>
             <p className="text-muted-foreground mb-4 flex-1">
-              İçinde tutma! Kimliğini gizli tutarak düşüncelerini, duygularını ve itiraflarını paylaş.
+              NGL'den falan sıkıldıysan buraya %100 anonim mkal itiraflarini atabilirsin
             </p>
             <Link href="/itiraflar" className="text-pink-500 font-medium flex items-center gap-1 hover:gap-2 transition-all mt-auto">
               İtirafları Gör <ArrowRight className="w-4 h-4" />
