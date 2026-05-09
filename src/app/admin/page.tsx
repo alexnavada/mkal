@@ -127,7 +127,7 @@ export default function AdminPage() {
       if (newsImage) {
         const formData = new FormData();
         formData.append("image", newsImage);
-        
+
         const apiKey = process.env.NEXT_PUBLIC_IMGBB_API_KEY;
         if (!apiKey) throw new Error("ImgBB API Anahtarı eksik!");
 
@@ -136,7 +136,7 @@ export default function AdminPage() {
           body: formData,
         });
         const data = await res.json();
-        
+
         if (data.success) {
           imageUrl = data.data.url;
         } else {
@@ -199,7 +199,7 @@ export default function AdminPage() {
       if (!data.success) {
         throw new Error("Fotoğraf ImgBB'ye yüklenemedi.");
       }
-      
+
       const url = data.data.url;
 
       await addDoc(collection(db, "photos"), {
@@ -229,7 +229,8 @@ export default function AdminPage() {
             </div>
             <h1 className="text-2xl font-bold">Yönetici Girişi</h1>
             <p className="text-muted-foreground text-center text-sm mt-2">
-              Sadece MKAL'in babalari bu panele erişebilir.
+              Sadece MKAL'in babalari bu panele erişebilir. <br />
+              ibandan 200 düşersen sende erişebilirsin.😂
             </p>
           </div>
 
@@ -317,7 +318,7 @@ export default function AdminPage() {
                   {pendingConfessions.map((confession) => (
                     <div key={confession.id} className="border border-border rounded-xl p-5 flex flex-col gap-3">
                       <p className="whitespace-pre-wrap">{confession.text}</p>
-                      
+
                       {/* Cihaz Bilgileri */}
                       <div className="bg-muted p-3 rounded-lg text-xs text-muted-foreground font-mono">
                         <p><span className="font-semibold">IP:</span> {confession.ip || "Bilinmiyor"}</p>
@@ -358,7 +359,7 @@ export default function AdminPage() {
                   {approvedConfessions.map((confession) => (
                     <div key={confession.id} className="border border-border rounded-xl p-5 flex flex-col gap-3 opacity-80 hover:opacity-100 transition-opacity">
                       <p className="whitespace-pre-wrap">{confession.text}</p>
-                      
+
                       {/* Cihaz Bilgileri */}
                       <div className="bg-muted p-3 rounded-lg text-xs text-muted-foreground font-mono">
                         <p><span className="font-semibold">IP:</span> {confession.ip || "Bilinmiyor"}</p>

@@ -32,13 +32,13 @@ export default function ItiraflarPage() {
         id: doc.id,
         ...doc.data(),
       })) as Confession[];
-      
+
       data.sort((a, b) => {
         const timeA = a.createdAt?.toMillis() || 0;
         const timeB = b.createdAt?.toMillis() || 0;
         return timeB - timeA;
       });
-      
+
       setConfessions(data);
     }, (error) => {
       console.error("İtiraflar yüklenirken hata:", error);
@@ -90,7 +90,7 @@ export default function ItiraflarPage() {
         </div>
         <div>
           <h1 className="text-3xl font-bold">Anonim İtiraflar</h1>
-          <p className="text-muted-foreground">Kimliğini gizli tutarak içindekileri dök.</p>
+          <p className="text-muted-foreground">MKAL'e ait itiraflar.</p>
         </div>
       </div>
 

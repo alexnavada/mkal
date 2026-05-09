@@ -15,11 +15,15 @@ export default function Home() {
             </span>
             MKAL Topluluk Aktif!
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 max-w-3xl">
-            MKAL ÖĞRENCİ TOPLULUĞU <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">I LOVE MKAL</span>
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-2 max-w-3xl leading-tight">
+            MKAL TOPLULUĞU <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-600"> I LOVE MKAL</span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-2">
             ÜST DÜZEY MKAL ÖĞRENCİ TOPLULUĞU
+          </p>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10">
+            <Link className="text-blue-500 font-bold hover:text-primary" href="https://instagram.com/mkaltopluluk">@mkaltopluluk</Link>
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link

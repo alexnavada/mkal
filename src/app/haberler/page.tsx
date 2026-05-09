@@ -46,7 +46,7 @@ export default function HaberlerPage() {
         </div>
         <div>
           <h1 className="text-3xl font-bold">Okuldan Haberler</h1>
-          <p className="text-muted-foreground">Etkinlikler, duyurular ve magazin.</p>
+          <p className="text-muted-foreground">MKAL'den en güzel haberler. (Haber atmak için DM atabilirsiniz)</p>
         </div>
       </div>
 
@@ -65,8 +65,8 @@ export default function HaberlerPage() {
               <article className="bg-card border border-border rounded-2xl overflow-hidden transition-all hover:border-primary/50 hover:shadow-lg h-full flex flex-col">
                 <div className="aspect-[16/9] w-full bg-muted overflow-hidden relative">
                   {news.imageUrl ? (
-                    <img 
-                      src={news.imageUrl} 
+                    <img
+                      src={news.imageUrl}
                       alt={news.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -80,7 +80,7 @@ export default function HaberlerPage() {
                   <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-3">
                     <Calendar className="w-3.5 h-3.5" />
                     <span>
-                      {news.createdAt 
+                      {news.createdAt
                         ? format(news.createdAt.toDate(), "d MMMM yyyy", { locale: tr })
                         : "Bilinmeyen Tarih"
                       }

@@ -43,7 +43,7 @@ export default function FotograflarPage() {
         </div>
         <div>
           <h1 className="text-3xl font-bold">Fotoğraf Arşivi</h1>
-          <p className="text-muted-foreground">Okuldan en güzel kareler.</p>
+          <p className="text-muted-foreground">MKAL'den en güzel kareler. (Atılmasını istediğiniz fotoğrafları DM atabilirsiniz)</p>
         </div>
       </div>
 
@@ -58,15 +58,15 @@ export default function FotograflarPage() {
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {photos.map((photo) => (
-            <div 
-              key={photo.id} 
+            <div
+              key={photo.id}
               className="group relative aspect-square bg-muted rounded-xl overflow-hidden cursor-pointer"
               onClick={() => setSelectedPhoto(photo)}
             >
               {/* Note: In a real app we should use Next.js Image component, but regular img is fine if domains aren't configured */}
-              <img 
-                src={photo.url} 
-                alt={photo.title || "Fotoğraf"} 
+              <img
+                src={photo.url}
+                alt={photo.title || "Fotoğraf"}
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
               />
@@ -80,11 +80,11 @@ export default function FotograflarPage() {
 
       {/* Modal */}
       {selectedPhoto && (
-        <div 
+        <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 backdrop-blur-sm"
           onClick={() => setSelectedPhoto(null)}
         >
-          <button 
+          <button
             className="absolute top-4 right-4 p-2 text-white/70 hover:text-white bg-black/50 rounded-full transition-colors"
             onClick={(e) => {
               e.stopPropagation();
@@ -93,10 +93,10 @@ export default function FotograflarPage() {
           >
             <X className="w-6 h-6" />
           </button>
-          
-          <img 
-            src={selectedPhoto.url} 
-            alt={selectedPhoto.title || "Fotoğraf Detayı"} 
+
+          <img
+            src={selectedPhoto.url}
+            alt={selectedPhoto.title || "Fotoğraf Detayı"}
             className="max-w-full max-h-[90vh] object-contain rounded-md"
             onClick={(e) => e.stopPropagation()} // Resme tıklayınca kapanmasın
           />
